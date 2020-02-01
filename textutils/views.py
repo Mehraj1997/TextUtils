@@ -40,7 +40,7 @@ def remove(request):
         param = {'message':'Extra Space Remover','input': analyzedText}
         return render(request,'analyze.html',param)
     elif(charactercount== 'on'):
-        count=0;
+        count=0
         
         for char in djtext:
             if(char!=" "):
