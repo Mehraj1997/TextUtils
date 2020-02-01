@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>TextUtils.com</title>
 </head>
 
 <body>
@@ -24,15 +24,41 @@
 
 
 <br><br>
-<div class="container">
-    <div class="form-group">
-
-
-       <h3><label for="exampleFormControlTextarea1">Enter your text here!!!</label></h3>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-            style="margin-top: 0px; margin-bottom: 0px; height: 160px;"></textarea>
+<form action="removepunch" method="GET">
+    <div class="container">
+        <div class="form-group">
+    
+    
+            <h3><label for="exampleFormControlTextarea1">Enter your text here!!!</label></h3>
+            <textarea class="form-control" name="text" id="exampleFormControlTextarea1" rows="3"
+                style="margin-top: 0px; margin-bottom: 0px; height: 160px;"></textarea>
+        </div>
+        <br><br>
+        <div class="custom-control custom-switch">
+            <input type="checkbox" name="removepunc" class="custom-control-input" id="customSwitch1">
+            <label class="custom-control-label" for="customSwitch1">Remove Punctuation</label>
+        </div>
+        <div class="custom-control custom-switch">
+            <input type="checkbox" name="fullcaps" class="custom-control-input" id="customSwitch2">
+            <label class="custom-control-label" for="customSwitch2">Upper Case</label>
+        </div>
+        <div class="custom-control custom-switch">
+            <input type="checkbox" name="nlr" class="custom-control-input" id="customSwitch3">
+            <label class="custom-control-label" for="customSwitch3">New Line Remover</label>
+        </div>
+        <div class="custom-control custom-switch">
+            <input type="checkbox" name="esr" class="custom-control-input" id="customSwitch4">
+            <label class="custom-control-label" for="customSwitch4">Extra Space Remover</label>
+        </div>
+        <div class="custom-control custom-switch">
+            <input type="checkbox" name="charcount" class="custom-control-input" id="customSwitch5">
+            <label class="custom-control-label" for="customSwitch5">Character Counter</label>
+        </div>
+        <button type="submit" class="btn btn-outline-success">Analyze</button>
     </div>
-</div>
+</form>
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
